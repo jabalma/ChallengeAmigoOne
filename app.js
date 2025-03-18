@@ -38,6 +38,6 @@ function sortearAmigo() {
     } else {
         const randomNum = Math.floor(Math.random() * amigos.length);
         const amigoSecreto = amigos[randomNum].textContent;
-        results.innerHTML = `Tu amiguito secreto es: ${amigoSecreto}`;
+        resultado.innerHTML = `Tu amiguito secreto es: ${amigoSecreto}`;
     }
 }
