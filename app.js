@@ -30,3 +30,14 @@ function agregarAmigo() {
         }
     }
 }
+
+function sortearAmigo() {
+    const amigos = document.querySelectorAll('#listaAmigos li');
+    if (amigos.length === 0) {
+        results.innerHTML = "No hay amigos disponibles para sortear.";
+    } else {
+        const randomNum = Math.floor(Math.random() * amigosList.length);
+        const amigoSecreto = amigosList[randomNum].textContent;
+        results.innerHTML = `Tu amiguito secreto es: ${amigoSecreto}`;
+    }
+}
