@@ -37,7 +37,7 @@ function sortearAmigo() {
         results.innerHTML = "No hay amigos disponibles para sortear.";
     } else {
         const randomNum = Math.floor(Math.random() * amigosList.length);
-        const amigoSecreto = amigosList[randomNum].textContent;
+        const amigoSecreto = amigos[randomNum].textContent;
         results.innerHTML = `Tu amiguito secreto es: ${amigoSecreto}`;
     }
 }
